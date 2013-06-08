@@ -1,0 +1,3 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="BankingSite.Services.CreditCardApplicationService"
+     CodeBehind="CreditCardApplicationService.svc.cs"  
+    Factory="Ninject.Extensions.Wcf.NinjectServiceHostFactory"%>

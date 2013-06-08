@@ -1,0 +1,25 @@
+﻿body {
+    background-color: antiquewhite;
+}
+
+fieldset {
+    margin-top: 20px;
+}
+
+legend {
+    font-size: 150%;
+}
+
+
+fieldset label, fieldset input {
+    display: block;
+}
+
+fieldset label {
+    margin-top: 10px;
+}
+
+#ApplyNow {
+    margin-top: 20px;
+    font-size: 150%;
+}

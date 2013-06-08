@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:62727/Services/CreditCardApplicationService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BankingSite.Model.DomainEntities" />
+  <xs:element name="SubmitApplication">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BankingSite.Model.DomainEntities" minOccurs="0" name="application" nillable="true" type="q1:CreditCardApplication" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitApplicationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/BankingSite.Model.DomainEntities" minOccurs="0" name="SubmitApplicationResult" nillable="true" type="q2:SubmissionResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSuccesfulApplicantsName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="submissionReferenceResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSuccesfulApplicantsNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSuccesfulApplicantsNameResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
