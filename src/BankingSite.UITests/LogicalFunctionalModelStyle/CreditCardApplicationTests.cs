@@ -15,10 +15,6 @@ namespace BankingSite.UITests.LogicalFunctionalModelStyle
               using (var browser =
                 new IE(UiAutomationSettings.ApplyPageUrl))
             {
-                DemoStuff.BrowserDemoHelper.BringToFront(browser);
-                browser.AutoClose = false;
-
-
                 var applyPage = browser.Page<ApplyForCreditCardPage>();
 
                 applyPage.ApplyForCreditCard(name: "Jason",
@@ -43,9 +39,6 @@ namespace BankingSite.UITests.LogicalFunctionalModelStyle
             using (var browser =
                 new IE(UiAutomationSettings.ApplyPageUrl))
             {
-                DemoStuff.BrowserDemoHelper.BringToFront(browser);
-                browser.AutoClose = false;
-
                 var applyPage = browser.Page<ApplyForCreditCardPage>();
 
                 applyPage.ApplyForCreditCard(name: "Jason",
