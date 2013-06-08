@@ -28,6 +28,8 @@ namespace BankingSite.UITests.LogicalFunctionalModelStyle
                 Assert.That(acceptedPage.Document.Url.Contains("ApplicationAccepted.aspx"));
 
                 Assert.That(acceptedPage.Name, Is.EqualTo("Jason"));
+
+                browser.Close();
             }
         }
 
@@ -46,6 +48,8 @@ namespace BankingSite.UITests.LogicalFunctionalModelStyle
                                              airlineNumber: "BadNumber");
                 
                 Assert.That(browser.Text.Contains("Airline membership number is invalid"));
+
+                browser.Close();
             }
         }
     }
