@@ -7,7 +7,6 @@ namespace BankingSite.IntegrationTests
     public class CreditCheckerGatewayTests
     {
         [Test]
-        [Category("smoke")]
         public void ShouldCreditCheckGoodPerson()
         {
             var sut = new CreditCheckerGateway();
