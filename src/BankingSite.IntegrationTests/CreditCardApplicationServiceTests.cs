@@ -9,7 +9,6 @@ namespace BankingSite.IntegrationTests
         private const string ApplicantName = "Jason";
 
         [Test]
-        [Category("smoke")]
         public void ShouldSubmitValidApplication()
         {
             var submissionResult = SubmitAValidApplication();
