@@ -13,7 +13,7 @@ namespace BankingSite.UITests.LogicalFunctionalModelStyle
         public void ShouldShowCorrectApplicantDetailsOnSuccessPage()
         {
               using (var browser =
-                new IE("http://localhost:62727/Pages/ApplyForCreditCard.aspx"))
+                new IE(UiAutomationSettings.ApplyPageUrl))
             {
                 DemoStuff.BrowserDemoHelper.BringToFront(browser);
                 browser.AutoClose = false;
@@ -41,7 +41,7 @@ namespace BankingSite.UITests.LogicalFunctionalModelStyle
         public void ShouldShowValidationErrors()
         {
             using (var browser =
-                new IE("http://localhost:62727/Pages/ApplyForCreditCard.aspx"))
+                new IE(UiAutomationSettings.ApplyPageUrl))
             {
                 DemoStuff.BrowserDemoHelper.BringToFront(browser);
                 browser.AutoClose = false;
