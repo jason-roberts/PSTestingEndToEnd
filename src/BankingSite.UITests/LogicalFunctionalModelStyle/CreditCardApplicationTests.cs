@@ -48,5 +48,33 @@ namespace BankingSite.UITests.LogicalFunctionalModelStyle
                 Assert.That(browser.Text.Contains("Airline membership number is invalid"));
             }
         }
+
+        [Test]
+        [STAThread]
+        public void DummyTest1()
+        {
+            Assert.Pass();
+        }
+
+        [Test]
+        [STAThread]
+        public void DummyTest2()
+        {
+            Assert.Pass();
+        }
+
+        [Test]
+        [STAThread]
+        public void DummyTest3()
+        {
+            Assert.Pass();
+        }
+
+        [Test]
+        [STAThread]
+        public void DummyTest4()
+        {
+            Assert.Pass();
+        }
     }
 }
