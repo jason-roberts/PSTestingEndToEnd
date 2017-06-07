@@ -2,6 +2,6 @@
 {
     static class UiAutomationSettings
     {
-        public static readonly string ApplyPageUrl = "http://localhost/BankingSiteUITests/Pages/ApplyForCreditCard.aspx";
+        public static readonly string ApplyPageUrl = "http://localhost:62727/Pages/ApplyForCreditCard.aspx";
     }
 }
